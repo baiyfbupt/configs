@@ -1,1 +1,1 @@
-# tmux.config
+# tmux, vim configs
