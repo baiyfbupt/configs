@@ -237,9 +237,14 @@ let g:miniBufExplMapWindowNavArrows = 1
 let g:miniBufExplMapCTabSwitchBufs = 1 
 let g:miniBufExplModSelTarget = 1
 "set cursorcolumn
-set colorcolumn=80
+"set colorcolumn=80
 
 autocmd BufReadPost *
 \ if line("'\"")>0&&line("'\"")<=line("$") |
 \ exe "normal g'\"" |
 \ endif
+set cursorcolumn
+highlight CursorColumn cterm=NONE ctermbg=black ctermfg=green guibg=NONE guifg=NONE
+
+
+
